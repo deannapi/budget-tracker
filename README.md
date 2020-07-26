@@ -1,5 +1,5 @@
 # Budget Tracker
-A budget tracker app that allows the user to access the app offline.
+A budget tracker app that allows the user to add expenses and make deposits while giving the user a money balance.  The app is available offline and will still have full functionality.
 
 [Check out the Budget Tracker Here](https://deannapi.github.io/budget-tracker/)
 
