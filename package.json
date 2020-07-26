@@ -1,27 +1,44 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A budget tracker app that allows the user to access the app offline.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "lite-server": "lite-server"
+    "lite-server": "lite-server",
+    "webpack": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "DeAnna Martinez",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/coding-boot-camp/unit18hw/issues"
   },
   "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "jquery": "^3.5.1",
     "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "popper.js": "^1.16.1"
+  },
+  "keywords": [
+    "pwa",
+    "mongodb",
+    "nosql"
+  ],
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-pwa-manifest": "^4.2.0"
   }
 }

@@ -1,6 +1,8 @@
 # Budget Tracker
 A budget tracker app that allows the user to access the app offline.
 
+[Check out the Budget Tracker Here](https://deannapi.github.io/budget-tracker/)
+
 # Description
     AS AN avid traveler
     I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
@@ -14,10 +16,15 @@ A budget tracker app that allows the user to access the app offline.
 
 # Tools
 [IndexedDB]()
+
 [NoSQL]()
+
 [Express.js]()
+
 [MongoDB]()
+
 [Mongoose]()
+
 [Heroku]()
 
 
