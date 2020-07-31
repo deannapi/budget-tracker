@@ -54,7 +54,7 @@ self.addEventListener("fetch", evt => {
         console.log('[Service Worker] Fetch(data)', evt.request.url);
     
 evt.respondWith(
-                caches.open(DATA_CACHE_NAME).then(cache => {
+                caches.open(CACHE_NAME).then(cache => {
                 return fetch(evt.request)
                 .then(response => {
                     if (response.status === 200){
@@ -70,11 +70,11 @@ evt.respondWith(
             return;
         }
 
-evt.respondWith(
-    caches.open(CACHE_NAME).then( cache => {
-      return cache.match(evt.request).then(response => {
-        return response || fetch(evt.request);
-      });
-    })
-  );
+// evt.respondWith(
+//     caches.open(CACHE_NAME).then( cache => {
+//       return cache.match(evt.request).then(response => {
+//         return response || fetch(evt.request);
+//       });
+//     })
+//   );
 });
